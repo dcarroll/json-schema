@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "EncryptedText",
+    "required":[
+        "length",
+        "maskType",
+        "maskChar"
+    ],
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "boolean"
+        },
+        "length": {
+            "title": "length",
+            "type": "integer"
+        },
+        "maskType": {
+            "title": "maskType",
+            "type": "string",
+            "enum": [
+                "all",
+                "creditCard",
+                "ssn",
+                "lastFour",
+                "sin",
+                "nino"
+            ]
+        },
+        "maskChar": {
+            "title": "maskChar",
+            "type": "string",
+            "enum": [
+                "asterisk",
+                "X"
+            ]
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "DateTime",
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "boolean"
+        },
+        "defaultValue": {
+            "title": "defaultValue",
+            "type": "string"
+        },
+        "formula": {
+            "title": "formula",
+            "type": "string"
+        },
+        "formulaTreatBlanksAs": {
+            "title": "formulaTreatBlanksAs",
+            "type": "string"
+        }
+    }
+}

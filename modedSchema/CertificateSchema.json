@@ -1,0 +1,149 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "Certificate": {
+            "required": [
+                "caSigned",
+                "masterLabel"
+            ],
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataWithContentSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "Certificate",
+                    "properties": {
+                        "caSigned": {
+                            "title": "caSigned",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "caSigned",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "encryptedWithPlatformEncryption": {
+                            "title": "encryptedWithPlatformEncryption",
+                            "allOf": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                        },
+                                        "value": {
+                                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                        }
+                                    },
+                                    "elementName": {
+                                        "localPart": "encryptedWithPlatformEncryption",
+                                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                                    }
+                                }
+                            ],
+                            "propertyType": "elementRef",
+                            "elementName": {
+                                "localPart": "encryptedWithPlatformEncryption",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "expirationDate": {
+                            "title": "expirationDate",
+                            "allOf": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                        },
+                                        "value": {
+                                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/dateTime"
+                                        }
+                                    },
+                                    "elementName": {
+                                        "localPart": "expirationDate",
+                                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                                    }
+                                }
+                            ],
+                            "propertyType": "elementRef",
+                            "elementName": {
+                                "localPart": "expirationDate",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "keySize": {
+                            "title": "keySize",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/int"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "keySize",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "masterLabel": {
+                            "title": "masterLabel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "masterLabel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "privateKeyExportable": {
+                            "title": "privateKeyExportable",
+                            "allOf": [
+                                {
+                                    "type": "object",
+                                    "properties": {
+                                        "name": {
+                                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/QName"
+                                        },
+                                        "value": {
+                                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                        }
+                                    },
+                                    "elementName": {
+                                        "localPart": "privateKeyExportable",
+                                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                                    }
+                                }
+                            ],
+                            "propertyType": "elementRef",
+                            "elementName": {
+                                "localPart": "privateKeyExportable",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "Certificate",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "caSigned",
+                "encryptedWithPlatformEncryption",
+                "expirationDate",
+                "keySize",
+                "masterLabel",
+                "privateKeyExportable"
+            ]
+        }
+    }
+}

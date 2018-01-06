@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "CommunityThemeLayoutType": {
+            "allOf": [
+                {
+                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                },
+                {
+                    "enum": [
+                        "Login",
+                        "Home",
+                        "Inner"
+                    ]
+                }
+            ],
+            "typeType": "enumInfo",
+            "typeName": {
+                "localPart": "CommunityThemeLayoutType",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            }
+        }
+    }
+}

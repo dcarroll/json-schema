@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "MasterDetail",
+    "properties": {
+        "referenceTo": {
+            "title": "referenceTo",
+            "type": "string"
+        },
+        "relationshipLabel": {
+            "title": "relationshipLabel",
+            "type": "string"
+        },
+        "relationshipName": {
+            "title": "relationshipName",
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "required":[
+        "_default"
+    ],
+    "allOf":[
+        {
+            "$ref": "MetadataSchema.json"
+        },
+        {
+            "type":"object",
+            "title":"CustomValue",
+            "properties":{
+                "color":{
+                    "title":"color",
+                    "type": "string"
+                },
+                "_default":{
+                    "title":"_default",
+                    "type": "boolean"
+                },
+                "description":{
+                    "title":"description",
+                    "type": "string"
+                },
+                "isActive":{
+                    "title":"isActive",
+                    "type": "boolean"
+                },
+                "label":{
+                    "title":"label",
+                    "type": "string"
+                }
+            }
+        }
+    ]
+}

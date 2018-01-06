@@ -1,0 +1,41 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "FilterItem",
+    "required": [
+        "field",
+        "operation"
+    ],
+    "properties": {
+        "field": {
+            "title": "field",
+            "type": "string"
+        },
+        "operation": {
+            "title": "operation",
+            "type": "string",
+            "enum":[
+                "equals",
+                "notEqual",
+                "lessThan",
+                "greaterThan",
+                "lessOrEqual",
+                "greaterOrEqual",
+                "contains",
+                "notContain",
+                "startsWith",
+                "includes",
+                "excludes",
+                "within"
+            ]
+        },
+        "value": {
+            "title": "value",
+            "type": "string"
+        },
+        "valueField": {
+            "title": "valueField",
+            "type": "string"
+        }
+    }
+}

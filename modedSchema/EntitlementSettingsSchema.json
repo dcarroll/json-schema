@@ -1,0 +1,169 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "EntitlementSettings": {
+            "required": [
+                "enableEntitlementVersioning",
+                "enableEntitlements"
+            ],
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "EntitlementSettings",
+                    "properties": {
+                        "assetLookupLimitedToActiveEntitlementsOnAccount": {
+                            "title": "assetLookupLimitedToActiveEntitlementsOnAccount",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "assetLookupLimitedToActiveEntitlementsOnAccount",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "assetLookupLimitedToActiveEntitlementsOnContact": {
+                            "title": "assetLookupLimitedToActiveEntitlementsOnContact",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "assetLookupLimitedToActiveEntitlementsOnContact",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "assetLookupLimitedToSameAccount": {
+                            "title": "assetLookupLimitedToSameAccount",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "assetLookupLimitedToSameAccount",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "assetLookupLimitedToSameContact": {
+                            "title": "assetLookupLimitedToSameContact",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "assetLookupLimitedToSameContact",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "enableEntitlementVersioning": {
+                            "title": "enableEntitlementVersioning",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "enableEntitlementVersioning",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "enableEntitlements": {
+                            "title": "enableEntitlements",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "enableEntitlements",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "entitlementLookupLimitedToActiveStatus": {
+                            "title": "entitlementLookupLimitedToActiveStatus",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "entitlementLookupLimitedToActiveStatus",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "entitlementLookupLimitedToSameAccount": {
+                            "title": "entitlementLookupLimitedToSameAccount",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "entitlementLookupLimitedToSameAccount",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "entitlementLookupLimitedToSameAsset": {
+                            "title": "entitlementLookupLimitedToSameAsset",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "entitlementLookupLimitedToSameAsset",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "entitlementLookupLimitedToSameContact": {
+                            "title": "entitlementLookupLimitedToSameContact",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "entitlementLookupLimitedToSameContact",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "EntitlementSettings",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "assetLookupLimitedToActiveEntitlementsOnAccount",
+                "assetLookupLimitedToActiveEntitlementsOnContact",
+                "assetLookupLimitedToSameAccount",
+                "assetLookupLimitedToSameContact",
+                "enableEntitlementVersioning",
+                "enableEntitlements",
+                "entitlementLookupLimitedToActiveStatus",
+                "entitlementLookupLimitedToSameAccount",
+                "entitlementLookupLimitedToSameAsset",
+                "entitlementLookupLimitedToSameContact"
+            ]
+        }
+    }
+}

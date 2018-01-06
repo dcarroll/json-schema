@@ -1,0 +1,432 @@
+{
+    "jsonValidation": [
+        {
+            "fileMatch": "**/*.trigger-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApexTriggerSchema.json"
+        },
+        {
+            "fileMatch": "**/*.installedPackage-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/InstalledPackageSchema.json"
+        },
+        {
+            "fileMatch": "**/*.EmbeddedServiceBranding-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EmbeddedServiceBrandingSchema.json"
+        },
+        {
+            "fileMatch": "**/*.authprovider-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AuthProviderSchema.json"
+        },
+        {
+            "fileMatch": "**/*.profile-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ProfileSchema.json"
+        },
+        {
+            "fileMatch": "**/*.site-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SiteDotComSchema.json"
+        },
+        {
+            "fileMatch": "**/*.network-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NetworkSchema.json"
+        },
+        {
+            "fileMatch": "**/*.group-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/GroupSchema.json"
+        },
+        {
+            "fileMatch": "**/*.assignmentRules-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AssignmentRulesSchema.json"
+        },
+        {
+            "fileMatch": "**/*.email-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EmailTemplateSchema.json"
+        },
+        {
+            "fileMatch": "**/*.reportType-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ReportTypeSchema.json"
+        },
+        {
+            "fileMatch": "**/*.networkBranding-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NetworkBrandingSchema.json"
+        },
+        {
+            "fileMatch": "**/*.EmbeddedServiceConfig-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EmbeddedServiceConfigSchema.json"
+        },
+        {
+            "fileMatch": "**/*.quickAction-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/QuickActionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.page-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApexPageSchema.json"
+        },
+        {
+            "fileMatch": "**/*.postTemplate-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/PostTemplateSchema.json"
+        },
+        {
+            "fileMatch": "**/*.object-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomObjectSchema.json"
+        },
+        {
+            "fileMatch": "**/*.globalValueSet-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/GlobalValueSetSchema.json"
+        },
+        {
+            "fileMatch": "**/*.remoteSite-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/RemoteSiteSettingSchema.json"
+        },
+        {
+            "fileMatch": "**/*.resource-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/StaticResourceSchema.json"
+        },
+        {
+            "fileMatch": "**/*.wds-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WaveDatasetSchema.json"
+        },
+        {
+            "fileMatch": "**/*.feedFilter-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomFeedFilterSchema.json"
+        },
+        {
+            "fileMatch": "**/*.userCriteria-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/UserCriteriaSchema.json"
+        },
+        {
+            "fileMatch": "**/*.layout-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LayoutSchema.json"
+        },
+        {
+            "fileMatch": "**/*.lightningExperienceTheme-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LightningExperienceThemeSchema.json"
+        },
+        {
+            "fileMatch": "**/*.cleanDataService-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CleanDataServiceSchema.json"
+        },
+        {
+            "fileMatch": "**/*.LeadConvertSetting-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LeadConvertSettingsSchema.json"
+        },
+        {
+            "fileMatch": "**/*.sharingSet-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SharingSetSchema.json"
+        },
+        {
+            "fileMatch": "**/*.autoResponseRules-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AutoResponseRulesSchema.json"
+        },
+        {
+            "fileMatch": "**/*.escalationRules-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EscalationRulesSchema.json"
+        },
+        {
+            "fileMatch": "**/*.testSuite-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApexTestSuiteSchema.json"
+        },
+        {
+            "fileMatch": "**/*.samlssoconfig-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SamlSsoConfigSchema.json"
+        },
+        {
+            "fileMatch": "**/*.topicsForObjects-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/TopicsForObjectsSchema.json"
+        },
+        {
+            "fileMatch": "**/*.component-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApexComponentSchema.json"
+        },
+        {
+            "fileMatch": "**/*.flowDefinition-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/FlowDefinitionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.matchingRule-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MatchingRulesSchema.json"
+        },
+        {
+            "fileMatch": "**/*.rule-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ModerationRuleSchema.json"
+        },
+        {
+            "fileMatch": "**/*.sharingRules-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SharingRulesSchema.json"
+        },
+        {
+            "fileMatch": "**/*.approvalProcess-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApprovalProcessSchema.json"
+        },
+        {
+            "fileMatch": "**/*.flexipage-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/FlexiPageSchema.json"
+        },
+        {
+            "fileMatch": "**/*.synonymDictionary-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SynonymDictionarySchema.json"
+        },
+        {
+            "fileMatch": "**/*.homePageComponent-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/HomePageComponentSchema.json"
+        },
+        {
+            "fileMatch": "**/*.duplicateRule-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/DuplicateRuleSchema.json"
+        },
+        {
+            "fileMatch": "**/*.weblink-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomPageWebLinkSchema.json"
+        },
+        {
+            "fileMatch": "**/*.assistantRecommendationType-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AssistantRecommendationTypeSchema.json"
+        },
+        {
+            "fileMatch": "**/*.-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LightningComponentBundleSchema.json"
+        },
+        {
+            "fileMatch": "**/*.channelLayout-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ChannelLayoutSchema.json"
+        },
+        {
+            "fileMatch": "**/*.wdf-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WaveDataflowSchema.json"
+        },
+        {
+            "fileMatch": "**/*.md-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomMetadataSchema.json"
+        },
+        {
+            "fileMatch": "**/*.brandingSet-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/BrandingSetSchema.json"
+        },
+        {
+            "fileMatch": "**/*.externalServiceRegistration-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ExternalServiceRegistrationSchema.json"
+        },
+        {
+            "fileMatch": "**/*.workflow-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WorkflowSchema.json"
+        },
+        {
+            "fileMatch": "**/*.tab-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomTabSchema.json"
+        },
+        {
+            "fileMatch": "**/*.actionLinkGroupTemplate-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ActionLinkGroupTemplateSchema.json"
+        },
+        {
+            "fileMatch": "**/*.cspTrustedSite-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CspTrustedSiteSchema.json"
+        },
+        {
+            "fileMatch": "**/*.cachePartition-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/PlatformCachePartitionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.delegateGroup-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/DelegateGroupSchema.json"
+        },
+        {
+            "fileMatch": "**/*.crt-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CertificateSchema.json"
+        },
+        {
+            "fileMatch": "**/*.connectedApp-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ConnectedAppSchema.json"
+        },
+        {
+            "fileMatch": "**/*.community-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CommunitySchema.json"
+        },
+        {
+            "fileMatch": "**/*.scf-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ScontrolSchema.json"
+        },
+        {
+            "fileMatch": "**/*.dataSource-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ExternalDataSourceSchema.json"
+        },
+        {
+            "fileMatch": "**/*.communityThemeDefinition-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CommunityThemeDefinitionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.cls-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApexClassSchema.json"
+        },
+        {
+            "fileMatch": "**/*.globalValueSetTranslation-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/GlobalValueSetTranslationSchema.json"
+        },
+        {
+            "fileMatch": "**/*.homePageLayout-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/HomePageLayoutSchema.json"
+        },
+        {
+            "fileMatch": "**/*.wdash-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WaveDashboardSchema.json"
+        },
+        {
+            "fileMatch": "**/*.wapp-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WaveApplicationSchema.json"
+        },
+        {
+            "fileMatch": "**/*.geodata-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EclairGeoDataSchema.json"
+        },
+        {
+            "fileMatch": "**/*.standardValueSet-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/StandardValueSetSchema.json"
+        },
+        {
+            "fileMatch": "**/*.CaseSubjectParticle-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CaseSubjectParticleSchema.json"
+        },
+        {
+            "fileMatch": "**/*.letter-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LetterheadSchema.json"
+        },
+        {
+            "fileMatch": "**/*.xml-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EmailServicesFunctionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.snapshot-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AnalyticSnapshotSchema.json"
+        },
+        {
+            "fileMatch": "**/*.namedCredential-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NamedCredentialSchema.json"
+        },
+        {
+            "fileMatch": "**/*.app-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomApplicationSchema.json"
+        },
+        {
+            "fileMatch": "**/*.managedTopics-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ManagedTopicsSchema.json"
+        },
+        {
+            "fileMatch": "**/*.wdpr-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WaveRecipeSchema.json"
+        },
+        {
+            "fileMatch": "**/*.ChatterExtension-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ChatterExtensionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.keywords-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/KeywordListSchema.json"
+        },
+        {
+            "fileMatch": "**/*.pathAssistant-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/PathAssistantSchema.json"
+        },
+        {
+            "fileMatch": "**/*.xmd-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WaveXmdSchema.json"
+        },
+        {
+            "fileMatch": "**/*.communityTemplateDefinition-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CommunityTemplateDefinitionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.corsWhitelistOrigin-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CorsWhitelistOriginSchema.json"
+        },
+        {
+            "fileMatch": "**/*.wlens-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/WaveLensSchema.json"
+        },
+        {
+            "fileMatch": "**/*.standardValueSetTranslation-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/StandardValueSetTranslationSchema.json"
+        },
+        {
+            "fileMatch": "**/*.datacategorygroup-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/DataCategoryGroupSchema.json"
+        },
+        {
+            "fileMatch": "**/*.queue-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/QueueSchema.json"
+        },
+        {
+            "fileMatch": "**/*.flow-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/FlowSchema.json"
+        },
+        {
+            "fileMatch": "**/*.callCenter-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CallCenterSchema.json"
+        },
+        {
+            "fileMatch": "**/*.customApplicationComponent-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomApplicationComponentSchema.json"
+        },
+        {
+            "fileMatch": "**/*.dashboard-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/DashboardSchema.json"
+        },
+        {
+            "fileMatch": "**/*.asset-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ContentAssetSchema.json"
+        },
+        {
+            "fileMatch": "**/*.uiplugin-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/UiPluginSchema.json"
+        },
+        {
+            "fileMatch": "**/*.customPermission-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomPermissionSchema.json"
+        },
+        {
+            "fileMatch": "**/*.portal-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/PortalSchema.json"
+        },
+        {
+            "fileMatch": "**/*.appMenu-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AppMenuSchema.json"
+        },
+        {
+            "fileMatch": "**/*.profilePasswordPolicy-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ProfilePasswordPolicySchema.json"
+        },
+        {
+            "fileMatch": "**/*.labels-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomLabelsSchema.json"
+        },
+        {
+            "fileMatch": "**/*.dataPipeline-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/DataPipelineSchema.json"
+        },
+        {
+            "fileMatch": "**/*.objectTranslation-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomObjectTranslationSchema.json"
+        },
+        {
+            "fileMatch": "**/*.report-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ReportSchema.json"
+        },
+        {
+            "fileMatch": "**/*.-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/DocumentSchema.json"
+        },
+        {
+            "fileMatch": "**/*.site-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomSiteSchema.json"
+        },
+        {
+            "fileMatch": "**/*.permissionset-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/PermissionSetSchema.json"
+        },
+        {
+            "fileMatch": "**/*.profileSessionSetting-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ProfileSessionSettingSchema.json"
+        },
+        {
+            "fileMatch": "**/*.transactionSecurityPolicy-meta.json",
+            "url": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/TransactionSecurityPolicySchema.json"
+        }
+    ]
+}

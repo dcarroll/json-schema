@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "String",
+    "required":[
+        "length",
+        "fullName"
+    ],
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "boolean"
+        },
+        "defaultValue": {
+            "title": "defaultValue",
+            "type": "string"
+        },
+        "unique": {
+            "title": "unique",
+            "type": "boolean"
+        },
+        "caseSensitive": {
+            "title": "caseSensitive",
+            "type": "boolean"
+        },
+        "externalId": {
+            "title": "externalId",
+            "type": "boolean"
+        },
+        "formula": {
+            "title": "formula",
+            "type": "string"
+        },
+        "formulaTreatBlanksAs": {
+            "title": "formulaTreatBlanksAs",
+            "type": "string"
+        },
+        "length": {
+            "title": "length",
+            "type": "integer"
+        }
+    }
+}

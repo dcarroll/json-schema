@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "DescribeValueTypeResponse": {
+            "type": "object",
+            "title": "DescribeValueTypeResponse",
+            "required": [
+                "result"
+            ],
+            "properties": {
+                "result": {
+                    "title": "result",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/DescribeValueTypeResultSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "result",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "propertiesOrder": [
+                "result"
+            ]
+        }
+    }
+}

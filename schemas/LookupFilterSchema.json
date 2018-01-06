@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "LookupFilter",
+    "required": [
+        "active",
+        "isOptional"
+    ],
+    "properties": {
+        "active": {
+            "title": "active",
+            "type": "boolean"
+        },
+        "booleanFilter": {
+            "title": "booleanFilter",
+            "type": "string"
+        },
+        "description": {
+            "title": "description",
+            "type": "string"
+        },
+        "errorMessage": {
+            "title": "errorMessage",
+            "type": "string"
+        },
+        "filterItems": {
+            "title": "filterItems",
+            "type": "array",
+            "items": {
+                "$ref": "FilterItemSchema.json"
+            },
+            "minItems": 0
+        },
+        "infoMessage": {
+            "title": "infoMessage",
+            "type": "string"
+        },
+        "isOptional": {
+            "title": "isOptional",
+            "type": "boolean"
+        }
+    }
+}

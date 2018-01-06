@@ -1,0 +1,20 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Phone",
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "object",
+            "properties": {
+                "$t": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "defaultValue": {
+            "title": "defaultValue",
+            "type": "string"
+        }
+    }
+}

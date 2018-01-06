@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ProcessSubmitterType": {
+            "allOf": [
+                {
+                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                },
+                {
+                    "enum": [
+                        "group",
+                        "role",
+                        "user",
+                        "roleSubordinates",
+                        "roleSubordinatesInternal",
+                        "owner",
+                        "creator",
+                        "partnerUser",
+                        "customerPortalUser",
+                        "portalRole",
+                        "portalRoleSubordinates",
+                        "allInternalUsers"
+                    ]
+                }
+            ],
+            "typeType": "enumInfo",
+            "typeName": {
+                "localPart": "ProcessSubmitterType",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            }
+        }
+    }
+}

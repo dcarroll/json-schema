@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "KnowledgeSuggestedArticlesSettings": {
+            "type": "object",
+            "title": "KnowledgeSuggestedArticlesSettings",
+            "properties": {
+                "caseFields": {
+                    "title": "caseFields",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/KnowledgeCaseFieldsSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "caseFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "useSuggestedArticlesForCase": {
+                    "title": "useSuggestedArticlesForCase",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "useSuggestedArticlesForCase",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "workOrderFields": {
+                    "title": "workOrderFields",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/KnowledgeWorkOrderFieldsSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "workOrderFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "workOrderLineItemFields": {
+                    "title": "workOrderLineItemFields",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/KnowledgeWorkOrderLineItemFieldsSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "workOrderLineItemFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "KnowledgeSuggestedArticlesSettings",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "caseFields",
+                "useSuggestedArticlesForCase",
+                "workOrderFields",
+                "workOrderLineItemFields"
+            ]
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Currency",
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "boolean"
+        },
+        "defaultValue": {
+            "title": "defaultValue",
+            "type": "string"
+        },
+        "unique": {
+            "title": "only allow unique values",
+            "type": "boolean"
+        },
+        "externalId": {
+            "title": "Is this field used as the id of an external system?",
+            "type": "boolean"
+        },
+        "precision": {
+            "title": "Digits to the right of the decimal",
+            "type": "integer"
+        },
+        "scale": {
+            "title": "Digits to the left of the decimal",
+            "type": "integer"
+        },
+        "formula": {
+            "title": "formula",
+            "type": "string"
+        },
+        "formulaTreatBlanksAs": {
+            "title": "How to handle formulas that return blank",
+            "type": "string"
+        }
+    }
+}

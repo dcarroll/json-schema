@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type":"object",
+    "title":"ValueSettings",
+    "required":[
+        "valueName"
+    ],
+    "properties":{
+        "controllingFieldValue":{
+            "title":"controllingFieldValue",
+            "type": "string"
+        },
+        "valueName":{
+            "title":"valueName",
+            "type": "string"
+        }
+    }
+}

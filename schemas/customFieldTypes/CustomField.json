@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Phone",
+    "properties": {
+        "label": {
+            "title": "label",
+            "type": "string"
+        },
+        "description": {
+            "title": "description",
+            "type": "string"
+        }, 
+        "helpText": {
+            "title": "Custom help text",
+            "type": "string"
+        }
+    }
+}

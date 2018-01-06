@@ -1,0 +1,12 @@
+{
+    "CustomField": {
+        "fullName": "Location__c",
+        "displayLocationInDecimal": true,
+        "externalId": false,
+        "label": "Location",
+        "required": false,
+        "scale": 7,
+        "trackFeedHistory": false,
+        "_type": "Location"
+    }
+}

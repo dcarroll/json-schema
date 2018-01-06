@@ -1,0 +1,88 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "NetworkPageOverride": {
+            "type": "object",
+            "title": "NetworkPageOverride",
+            "properties": {
+                "changePasswordPageOverrideSetting": {
+                    "title": "changePasswordPageOverrideSetting",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NetworkPageOverrideSettingSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "changePasswordPageOverrideSetting",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "forgotPasswordPageOverrideSetting": {
+                    "title": "forgotPasswordPageOverrideSetting",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NetworkPageOverrideSettingSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "forgotPasswordPageOverrideSetting",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "homePageOverrideSetting": {
+                    "title": "homePageOverrideSetting",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NetworkPageOverrideSettingSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "homePageOverrideSetting",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "loginPageOverrideSetting": {
+                    "title": "loginPageOverrideSetting",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NetworkPageOverrideSettingSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "loginPageOverrideSetting",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "selfRegProfilePageOverrideSetting": {
+                    "title": "selfRegProfilePageOverrideSetting",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/NetworkPageOverrideSettingSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "selfRegProfilePageOverrideSetting",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "NetworkPageOverride",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "changePasswordPageOverrideSetting",
+                "forgotPasswordPageOverrideSetting",
+                "homePageOverrideSetting",
+                "loginPageOverrideSetting",
+                "selfRegProfilePageOverrideSetting"
+            ]
+        }
+    }
+}

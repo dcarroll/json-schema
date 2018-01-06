@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ActionEmailRecipientTypes": {
+            "allOf": [
+                {
+                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                },
+                {
+                    "enum": [
+                        "group",
+                        "role",
+                        "user",
+                        "opportunityTeam",
+                        "accountTeam",
+                        "roleSubordinates",
+                        "owner",
+                        "creator",
+                        "partnerUser",
+                        "accountOwner",
+                        "customerPortalUser",
+                        "portalRole",
+                        "portalRoleSubordinates",
+                        "contactLookup",
+                        "userLookup",
+                        "roleSubordinatesInternal",
+                        "email",
+                        "caseTeam",
+                        "campaignMemberDerivedOwner"
+                    ]
+                }
+            ],
+            "typeType": "enumInfo",
+            "typeName": {
+                "localPart": "ActionEmailRecipientTypes",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            }
+        }
+    }
+}

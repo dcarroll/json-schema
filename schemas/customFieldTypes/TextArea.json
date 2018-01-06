@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "TextArea",
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "boolean"
+        },
+        "defaultValue": {
+            "title": "defaultValue",
+            "type": "string"
+        }
+    }
+}

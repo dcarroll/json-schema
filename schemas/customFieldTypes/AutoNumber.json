@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "AutoNumber",
+    "required": [
+        "startingNumber",
+        "displayFormat"
+    ],
+    "properties": {
+        "startingNumber": {
+            "title": "startingNumber",
+            "type": "integer"
+        },
+        "displayFormat": {
+            "title": "The format of the number, for example: A-{0000}.",
+            "type": "string"
+        },
+        "externalId": {
+            "title": "externalId",
+            "type": "boolean"
+        }
+    }
+}

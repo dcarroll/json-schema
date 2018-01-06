@@ -1,0 +1,71 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Project Definition Object",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "packageDirectories"
+    ],
+    "properties": {
+        "namespace": {
+            "title": "Namespace for a package",
+            "type": "string",
+            "description": "The global namespace that is used with a package. The namespace must be registered with an org that is associated with your Dev Hub org. This namespace is assigned to scratch orgs created with the org:create command."
+        },
+        "packageDirectories": {
+            "title": "Source Directories for Packages",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "path": {
+                        "type": "string",
+                        "title": "path to source"
+                    },
+                    "default": {
+                        "type": "boolean",
+                        "title": "true if this is the default path"
+                    },
+                    "pid": {
+                        "type": "string",
+                        "title": "package id"
+                    },
+                    "versionName": {
+                        "type": "string",
+                        "title": "package version"
+                    },
+                    "versionDescription": {
+                        "type": "string",
+                        "title": "long version ver 1.2 - anc = 1.1",
+                        "description": "Human readable version information, format not specified."
+                    },
+                    "versionNumber": {
+                        "type": "string",
+                        "title": "symantic version",
+                        "description": "Symantic package version - 1.2.0.NEXT"
+                    },
+                    "ancestorId": {
+                        "type": "string",
+                        "title": "Id of previous package version"
+                    },
+                    "pdependencies": {
+                        "type": "array",
+                        "title": "package dependencies",
+                        "items": [
+                            {
+                                "packageId": {
+                                    "type": "string",
+                                    "title": "dependent package id"
+                                },
+                                "versionNumber": {
+                                    "type": "string",
+                                    "title": "dependent package version"
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

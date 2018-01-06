@@ -1,0 +1,577 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "CustomField",
+    "properties": {
+        "CustomField": {
+            "allOf": [
+                {
+                    "$ref": "MetadataSchema.json"
+                },
+                {
+                    "$ref": "customFieldTypes/CustomField.json"
+                },
+                {
+                    "oneOf": [
+                        {
+                            "$comment": "MasterDetail",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "CustomField._type": {
+                                            "enum": [
+                                                "MasterDetail"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/CustomField.json"
+                                },
+                                {
+                                    "$ref": "customFieldTypes/MasterDetail.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "LongTextArea",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "LongTextArea"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/LongTextArea.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "RichTextArea",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "RichTextArea"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/RichTextArea.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Location",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Location"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/Location.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "TextArea",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "TextArea"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/TextArea.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Url",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Url"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/Url.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Phone",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Phone"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/Phone.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Text",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Text"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/Text.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "EncryptedText",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "EncryptedText"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/EncryptedText.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Checkbox",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Checkbox"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/Checkbox.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "AutoNumber",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "AutoNumber"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/AutoNumber.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Currency",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Currency"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/FloatingPoint.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Number",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Number"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/FloatingPoint.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Percent",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Percent"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/FloatingPoint.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "DateTime",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "DateTime"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/DateTime.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Date",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Date"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/DateTime.json"
+                                }
+                            ]
+                        },
+                        {
+                            "$comment": "Email",
+                            "allOf": [
+                                {
+                                    "properties": {
+                                        "_type": {
+                                            "enum": [
+                                                "Email"
+                                            ]
+                                        }
+                                    }
+                                },
+                                {
+                                    "$ref": "customFieldTypes/Email.json"
+                                }
+                            ]
+                        },
+                        {
+                            "properties": {
+                                "businessOwnerGroup": {
+                                    "title": "businessOwnerGroup",
+                                    "type": "string"
+                                },
+                                "businessOwnerUser": {
+                                    "title": "businessOwnerUser",
+                                    "type": "string"
+                                },
+                                "businessStatus": {
+                                    "title": "businessStatus",
+                                    "type": "string"
+                                },
+                                "caseSensitive": {
+                                    "title": "caseSensitive",
+                                    "type": "boolean"
+                                },
+                                "customDataType": {
+                                    "title": "customDataType",
+                                    "type": "string"
+                                },
+                                "defaultValue": {
+                                    "title": "defaultValue",
+                                    "type": "string"
+                                },
+                                "deleteConstraint": {
+                                    "title": "deleteConstraint",
+                                    "type": "string",
+                                    "enum": [
+                                        "Cascade",
+                                        "Restrict",
+                                        "SetNull"
+                                    ]
+                                },
+                                "deprecated": {
+                                    "title": "deprecated",
+                                    "type": "boolean"
+                                },
+                                "description": {
+                                    "title": "description",
+                                    "type": "string"
+                                },
+                                "displayFormat": {
+                                    "title": "displayFormat",
+                                    "type": "string"
+                                },
+                                "encrypted": {
+                                    "title": "encrypted",
+                                    "type": "boolean"
+                                },
+                                "escapeMarkup": {
+                                    "title": "escapeMarkup",
+                                    "type": "boolean"
+                                },
+                                "externalDeveloperName": {
+                                    "title": "externalDeveloperName",
+                                    "type": "string"
+                                },
+                                "externalId": {
+                                    "title": "externalId",
+                                    "type": "boolean"
+                                },
+                                "fieldManageability": {
+                                    "title": "fieldManageability",
+                                    "type": "string",
+                                    "enum": [
+                                        "DeveloperControlled",
+                                        "SubscriberControlled",
+                                        "Locked"
+                                    ]
+                                },
+                                "formula": {
+                                    "title": "formula",
+                                    "type": "string"
+                                },
+                                "formulaTreatBlanksAs": {
+                                    "title": "formulaTreatBlanksAs",
+                                    "type": "string",
+                                    "enum": [
+                                        "BlankAsBlank",
+                                        "BlankAsZero"
+                                    ]
+                                },
+                                "inlineHelpText": {
+                                    "title": "inlineHelpText",
+                                    "type": "string"
+                                },
+                                "isConvertLeadDisabled": {
+                                    "title": "isConvertLeadDisabled",
+                                    "type": "boolean"
+                                },
+                                "isFilteringDisabled": {
+                                    "title": "isFilteringDisabled",
+                                    "type": "boolean"
+                                },
+                                "isNameField": {
+                                    "title": "isNameField",
+                                    "type": "boolean"
+                                },
+                                "isSortingDisabled": {
+                                    "title": "isSortingDisabled",
+                                    "type": "boolean"
+                                },
+                                "label": {
+                                    "title": "label",
+                                    "type": "string"
+                                },
+                                "length": {
+                                    "title": "length",
+                                    "type": "integer"
+                                },
+                                "lookupFilter": {
+                                    "title": "lookupFilter",
+                                    "$ref": "LookupFilterSchema.json"
+                                },
+                                "maskChar": {
+                                    "title": "maskChar",
+                                    "type": "string",
+                                    "enum": [
+                                        "asterisk",
+                                        "X"
+                                    ]
+                                },
+                                "maskType": {
+                                    "title": "maskType",
+                                    "type": "string",
+                                    "enum": [
+                                        "all",
+                                        "creditCard",
+                                        "ssn",
+                                        "lastFour",
+                                        "sin",
+                                        "nino"
+                                    ]
+                                },
+                                "metadataRelationshipControllingField": {
+                                    "title": "metadataRelationshipControllingField",
+                                    "type": "string"
+                                },
+                                "populateExistingRows": {
+                                    "title": "populateExistingRows",
+                                    "type": "boolean"
+                                },
+                                "precision": {
+                                    "title": "precision",
+                                    "type": "integer"
+                                },
+                                "referenceTargetField": {
+                                    "title": "referenceTargetField",
+                                    "type": "string"
+                                },
+                                "referenceTo": {
+                                    "title": "referenceTo",
+                                    "type": "string"
+                                },
+                                "relationshipLabel": {
+                                    "title": "relationshipLabel",
+                                    "type": "string"
+                                },
+                                "relationshipName": {
+                                    "title": "relationshipName",
+                                    "type": "string"
+                                },
+                                "relationshipOrder": {
+                                    "title": "relationshipOrder",
+                                    "type": "integer"
+                                },
+                                "reparentableMasterDetail": {
+                                    "title": "reparentableMasterDetail",
+                                    "type": "boolean"
+                                },
+                                "required": {
+                                    "title": "required",
+                                    "type": "boolean"
+                                },
+                                "restrictedAdminField": {
+                                    "title": "restrictedAdminField",
+                                    "type": "boolean"
+                                },
+                                "scale": {
+                                    "title": "scale",
+                                    "type": "integer"
+                                },
+                                "securityClassification": {
+                                    "title": "securityClassification",
+                                    "type": "string",
+                                    "enum": [
+                                        "AccountInformation",
+                                        "ConfigurationAndUsageData",
+                                        "DataIntendedToBePublic",
+                                        "BusinessSetupDataBusinessDataAndAggregates",
+                                        "AssociativeBusinessOrPersonalData",
+                                        "AuthenticationData"
+                                    ]
+                                },
+                                "startingNumber": {
+                                    "title": "startingNumber",
+                                    "type": "integer"
+                                },
+                                "stripMarkup": {
+                                    "title": "stripMarkup",
+                                    "type": "boolean"
+                                },
+                                "summarizedField": {
+                                    "title": "summarizedField",
+                                    "type": "string"
+                                },
+                                "summaryFilterItems": {
+                                    "title": "summaryFilterItems",
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "FilterItemSchema.json"
+                                    },
+                                    "minItems": 0
+                                },
+                                "summaryForeignKey": {
+                                    "title": "summaryForeignKey",
+                                    "type": "string"
+                                },
+                                "summaryOperation": {
+                                    "title": "summaryOperation",
+                                    "type": "string",
+                                    "enum": [
+                                        "count",
+                                        "sum",
+                                        "min",
+                                        "max"
+                                    ]
+                                },
+                                "trackFeedHistory": {
+                                    "title": "trackFeedHistory",
+                                    "type": "boolean"
+                                },
+                                "trackHistory": {
+                                    "title": "trackHistory",
+                                    "type": "boolean"
+                                },
+                                "trackTrending": {
+                                    "title": "trackTrending",
+                                    "type": "boolean"
+                                },
+                                "_type": {
+                                    "title": "_type",
+                                    "$ref": "FieldTypeSchema.json"
+                                },
+                                "unique": {
+                                    "title": "unique",
+                                    "type": "boolean"
+                                },
+                                "valueSet": {
+                                    "title": "valueSet",
+                                    "$ref": "ValueSetSchema.json"
+                                },
+                                "visibleLines": {
+                                    "title": "visibleLines",
+                                    "type": "integer"
+                                },
+                                "writeRequiresMasterRead": {
+                                    "title": "writeRequiresMasterRead",
+                                    "type": "boolean"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

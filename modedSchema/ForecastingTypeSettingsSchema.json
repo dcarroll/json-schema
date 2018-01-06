@@ -1,0 +1,333 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ForecastingTypeSettings": {
+            "type": "object",
+            "title": "ForecastingTypeSettings",
+            "required": [
+                "active",
+                "adjustmentsSettings",
+                "forecastRangeSettings",
+                "forecastingDateType",
+                "hasProductFamily",
+                "isAmount",
+                "isAvailable",
+                "isQuantity",
+                "masterLabel",
+                "name",
+                "opportunityListFieldsSelectedSettings",
+                "opportunityListFieldsUnselectedSettings",
+                "quotasSettings"
+            ],
+            "properties": {
+                "active": {
+                    "title": "active",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "active",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "adjustmentsSettings": {
+                    "title": "adjustmentsSettings",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AdjustmentsSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "adjustmentsSettings",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "displayedCategoryApiNames": {
+                    "title": "displayedCategoryApiNames",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "displayedCategoryApiNames",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "forecastRangeSettings": {
+                    "title": "forecastRangeSettings",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ForecastRangeSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "forecastRangeSettings",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "forecastedCategoryApiNames": {
+                    "title": "forecastedCategoryApiNames",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "forecastedCategoryApiNames",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "forecastingDateType": {
+                    "title": "forecastingDateType",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ForecastingDateTypeSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "forecastingDateType",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "hasProductFamily": {
+                    "title": "hasProductFamily",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "hasProductFamily",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "isAmount": {
+                    "title": "isAmount",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "isAmount",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "isAvailable": {
+                    "title": "isAvailable",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "isAvailable",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "isQuantity": {
+                    "title": "isQuantity",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "isQuantity",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "managerAdjustableCategoryApiNames": {
+                    "title": "managerAdjustableCategoryApiNames",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "managerAdjustableCategoryApiNames",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "masterLabel": {
+                    "title": "masterLabel",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "masterLabel",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "name": {
+                    "title": "name",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "name",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "opportunityListFieldsLabelMappings": {
+                    "title": "opportunityListFieldsLabelMappings",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/OpportunityListFieldsLabelMappingSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "opportunityListFieldsLabelMappings",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "opportunityListFieldsSelectedSettings": {
+                    "title": "opportunityListFieldsSelectedSettings",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/OpportunityListFieldsSelectedSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "opportunityListFieldsSelectedSettings",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "opportunityListFieldsUnselectedSettings": {
+                    "title": "opportunityListFieldsUnselectedSettings",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/OpportunityListFieldsUnselectedSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "opportunityListFieldsUnselectedSettings",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "opportunitySplitName": {
+                    "title": "opportunitySplitName",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "opportunitySplitName",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "ownerAdjustableCategoryApiNames": {
+                    "title": "ownerAdjustableCategoryApiNames",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "ownerAdjustableCategoryApiNames",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "quotasSettings": {
+                    "title": "quotasSettings",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/QuotasSettingsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "quotasSettings",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "territory2ModelName": {
+                    "title": "territory2ModelName",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "territory2ModelName",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "ForecastingTypeSettings",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "active",
+                "adjustmentsSettings",
+                "displayedCategoryApiNames",
+                "forecastRangeSettings",
+                "forecastedCategoryApiNames",
+                "forecastingDateType",
+                "hasProductFamily",
+                "isAmount",
+                "isAvailable",
+                "isQuantity",
+                "managerAdjustableCategoryApiNames",
+                "masterLabel",
+                "name",
+                "opportunityListFieldsLabelMappings",
+                "opportunityListFieldsSelectedSettings",
+                "opportunityListFieldsUnselectedSettings",
+                "opportunitySplitName",
+                "ownerAdjustableCategoryApiNames",
+                "quotasSettings",
+                "territory2ModelName"
+            ]
+        }
+    }
+}

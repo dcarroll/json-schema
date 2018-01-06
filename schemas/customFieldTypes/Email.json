@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Email",
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "boolean"
+        },
+        "defaultValue": {
+            "title": "defaultValue",
+            "type": "string"
+        },
+        "unique": {
+            "title": "unique",
+            "type": "boolean"
+        },
+        "externalId": {
+            "title": "external id",
+            "type": "boolean"
+        }
+    }
+}

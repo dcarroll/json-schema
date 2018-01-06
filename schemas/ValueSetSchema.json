@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type":"object",
+    "title":"ValueSet",
+    "properties":{
+        "controllingField":{
+            "title":"controllingField",
+            "type": "string"
+        },
+        "restricted":{
+            "title":"restricted",
+            "type": "boolean"
+        },
+        "valueSetDefinition":{
+            "title":"valueSetDefinition",
+            "$ref":"ValueSetValuesDefinitionSchema.json"
+        },
+        "valueSetName":{
+            "title":"valueSetName",
+            "type": "string"
+        },
+        "valueSettings":{
+            "title":"valueSettings",
+            "type":"array",
+            "items":{
+                "$ref":"ValueSettingSchema.json"
+            },
+            "minItems":0
+        }
+    }
+}

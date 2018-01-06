@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Location",
+    "required": [
+        "scale"
+    ],
+    "properties": {
+        "required": {
+            "title": "required",
+            "type": "boolean"
+        },
+        "displayLocationInDecimal": {
+            "title": "displayLocationInDecimal",
+            "type": "boolean",
+            "default": true
+        },
+        "scale": {
+            "title": "Decimal places",
+            "type": "integer"
+        }
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "FieldType",
+    "enum":[ 
+        "Lookup",
+        "Picklist",
+        "MultiselectPicklist",
+        "Html",
+        "Summary",
+        "Hierarchy",
+        "File",
+        "MetadataRelationship",
+        "Location",
+        "ExternalLookup",
+        "IndirectLookup",
+        "CustomDataType",
+        "Time"
+    ]
+
+}

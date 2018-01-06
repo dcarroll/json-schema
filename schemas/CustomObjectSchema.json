@@ -1,0 +1,469 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "CustomObject",
+    "properties": {
+        "CustomObject": {
+            "type": "object",
+            "title": "CustomObject",
+            "properties": {
+                "actionOverrides": {
+                    "title": "actionOverrides",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ActionOverride"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "allowInChatterGroups": {
+                    "title": "allowInChatterGroups",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "articleTypeChannelDisplay": {
+                    "title": "articleTypeChannelDisplay",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/ArticleTypeChannelDisplay"
+                        }
+                    ]
+                },
+                "businessProcesses": {
+                    "title": "businessProcesses",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/BusinessProcess"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "compactLayoutAssignment": {
+                    "title": "compactLayoutAssignment",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "compactLayouts": {
+                    "title": "compactLayouts",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/CompactLayout"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "customHelp": {
+                    "title": "customHelp",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "customHelpPage": {
+                    "title": "customHelpPage",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "customSettingsType": {
+                    "title": "customSettingsType",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/CustomSettingsType"
+                        }
+                    ]
+                },
+                "dataStewardGroup": {
+                    "title": "dataStewardGroup",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "dataStewardUser": {
+                    "title": "dataStewardUser",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "deploymentStatus": {
+                    "title": "deploymentStatus",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/DeploymentStatus"
+                        }
+                    ]
+                },
+                "deprecated": {
+                    "title": "deprecated",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "description": {
+                    "title": "description",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "enableActivities": {
+                    "title": "enableActivities",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableBulkApi": {
+                    "title": "enableBulkApi",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableChangeDataCapture": {
+                    "title": "enableChangeDataCapture",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableDivisions": {
+                    "title": "enableDivisions",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableEnhancedLookup": {
+                    "title": "enableEnhancedLookup",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableFeeds": {
+                    "title": "enableFeeds",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableHistory": {
+                    "title": "enableHistory",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableReports": {
+                    "title": "enableReports",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableSearch": {
+                    "title": "enableSearch",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableSharing": {
+                    "title": "enableSharing",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "enableStreamingApi": {
+                    "title": "enableStreamingApi",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "eventType": {
+                    "title": "eventType",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/PlatformEventType"
+                        }
+                    ]
+                },
+                "externalDataSource": {
+                    "title": "externalDataSource",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "externalName": {
+                    "title": "externalName",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "externalRepository": {
+                    "title": "externalRepository",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "externalSharingModel": {
+                    "title": "externalSharingModel",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/SharingModel"
+                        }
+                    ]
+                },
+                "fieldSets": {
+                    "title": "fieldSets",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/FieldSet"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "fields": {
+                    "title": "fields",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/CustomField"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "gender": {
+                    "title": "gender",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/Gender"
+                        }
+                    ]
+                },
+                "historyRetentionPolicy": {
+                    "title": "historyRetentionPolicy",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/HistoryRetentionPolicy"
+                        }
+                    ]
+                },
+                "household": {
+                    "title": "household",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "indexes": {
+                    "title": "indexes",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/Index"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "label": {
+                    "title": "label",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "listViews": {
+                    "title": "listViews",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ListView"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "nameField": {
+                    "title": "nameField",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/CustomField"
+                        }
+                    ]
+                },
+                "pluralLabel": {
+                    "title": "pluralLabel",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ]
+                },
+                "recordTypeTrackFeedHistory": {
+                    "title": "recordTypeTrackFeedHistory",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "recordTypeTrackHistory": {
+                    "title": "recordTypeTrackHistory",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ]
+                },
+                "recordTypes": {
+                    "title": "recordTypes",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/RecordType"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "searchLayouts": {
+                    "title": "searchLayouts",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/SearchLayouts"
+                        }
+                    ]
+                },
+                "sharingModel": {
+                    "title": "sharingModel",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/SharingModel"
+                        }
+                    ]
+                },
+                "sharingReasons": {
+                    "title": "sharingReasons",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/SharingReason"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "sharingRecalculations": {
+                    "title": "sharingRecalculations",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/SharingRecalculation"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "startsWith": {
+                    "title": "startsWith",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/StartsWith"
+                        }
+                    ]
+                },
+                "validationRules": {
+                    "title": "validationRules",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/ValidationRule"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                },
+                "visibility": {
+                    "title": "visibility",
+                    "allOf": [
+                        {
+                            "$ref": "#/definitions/SetupObjectVisibility"
+                        }
+                    ]
+                },
+                "webLinks": {
+                    "title": "webLinks",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/WebLink"
+                            },
+                            "minItems": 0
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "title": "Checkbox",
+    "required": [
+        "defaultValue"
+    ],
+    "properties": {
+        "defaultValue": {
+            "title": "defaultValue",
+            "type": "boolean"
+        },
+        "formula": {
+            "title": "formula",
+            "type": "string"
+        },
+        "formulaTreatBlanksAs": {
+            "title": "formulaTreatBlanksAs",
+            "type": "string"
+        }
+    }
+}
