@@ -1,5 +1,5 @@
 {
-    "schemaDestination": "modedSchema2",
+    "schemaDestination": "modedSchema",
     "sourceSchema": "./wsdl/javascript/com_sforce_soap__2006__04_metadata.jsonschema",
     "wsdlFile": "wsdl.wsdl"
 }
