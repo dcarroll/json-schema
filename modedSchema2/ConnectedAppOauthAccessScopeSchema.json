@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ConnectedAppOauthAccessScope": {
+            "allOf": [
+                {
+                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                },
+                {
+                    "enum": [
+                        "Basic",
+                        "Api",
+                        "Web",
+                        "Full",
+                        "Chatter",
+                        "CustomApplications",
+                        "RefreshToken",
+                        "OpenID",
+                        "Profile",
+                        "Email",
+                        "Address",
+                        "Phone",
+                        "OfflineAccess",
+                        "CustomPermissions",
+                        "Wave",
+                        "Eclair"
+                    ]
+                }
+            ],
+            "typeType": "enumInfo",
+            "typeName": {
+                "localPart": "ConnectedAppOauthAccessScope",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            }
+        }
+    }
+}

@@ -1,0 +1,291 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "EmbeddedServiceLiveAgent": {
+            "required": [
+                "embeddedServiceConfig",
+                "enabled",
+                "fontSize",
+                "liveChatButton",
+                "liveChatDeployment",
+                "masterLabel",
+                "prechatEnabled",
+                "scenario"
+            ],
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "EmbeddedServiceLiveAgent",
+                    "properties": {
+                        "avatarImg": {
+                            "title": "avatarImg",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "avatarImg",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "customPrechatComponent": {
+                            "title": "customPrechatComponent",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "customPrechatComponent",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "embeddedServiceConfig": {
+                            "title": "embeddedServiceConfig",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "embeddedServiceConfig",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "embeddedServiceQuickActions": {
+                            "title": "embeddedServiceQuickActions",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EmbeddedServiceQuickActionSchema.json"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "embeddedServiceQuickActions",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "enabled": {
+                            "title": "enabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "enabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "fontSize": {
+                            "title": "fontSize",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EmbeddedServiceFontSizeSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "fontSize",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "headerBackgroundImg": {
+                            "title": "headerBackgroundImg",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "headerBackgroundImg",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "liveAgentChatUrl": {
+                            "title": "liveAgentChatUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "liveAgentChatUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "liveAgentContentUrl": {
+                            "title": "liveAgentContentUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "liveAgentContentUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "liveChatButton": {
+                            "title": "liveChatButton",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "liveChatButton",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "liveChatDeployment": {
+                            "title": "liveChatDeployment",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "liveChatDeployment",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "masterLabel": {
+                            "title": "masterLabel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "masterLabel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "prechatBackgroundImg": {
+                            "title": "prechatBackgroundImg",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "prechatBackgroundImg",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "prechatEnabled": {
+                            "title": "prechatEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "prechatEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "prechatJson": {
+                            "title": "prechatJson",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "prechatJson",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "scenario": {
+                            "title": "scenario",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EmbeddedServiceScenarioSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "scenario",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "smallCompanyLogoImg": {
+                            "title": "smallCompanyLogoImg",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "smallCompanyLogoImg",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "waitingStateBackgroundImg": {
+                            "title": "waitingStateBackgroundImg",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "waitingStateBackgroundImg",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "EmbeddedServiceLiveAgent",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "avatarImg",
+                "customPrechatComponent",
+                "embeddedServiceConfig",
+                "embeddedServiceQuickActions",
+                "enabled",
+                "fontSize",
+                "headerBackgroundImg",
+                "liveAgentChatUrl",
+                "liveAgentContentUrl",
+                "liveChatButton",
+                "liveChatDeployment",
+                "masterLabel",
+                "prechatBackgroundImg",
+                "prechatEnabled",
+                "prechatJson",
+                "scenario",
+                "smallCompanyLogoImg",
+                "waitingStateBackgroundImg"
+            ]
+        }
+    }
+}

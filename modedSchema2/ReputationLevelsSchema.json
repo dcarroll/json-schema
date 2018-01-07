@@ -1,0 +1,54 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ReputationLevels": {
+            "type": "object",
+            "title": "ReputationLevels",
+            "properties": {
+                "chatterAnswersReputationLevels": {
+                    "title": "chatterAnswersReputationLevels",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ChatterAnswersReputationLevelSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "chatterAnswersReputationLevels",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "ideaReputationLevels": {
+                    "title": "ideaReputationLevels",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/IdeaReputationLevelSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "ideaReputationLevels",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "ReputationLevels",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "chatterAnswersReputationLevels",
+                "ideaReputationLevels"
+            ]
+        }
+    }
+}

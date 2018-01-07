@@ -1,0 +1,126 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "Container": {
+            "type": "object",
+            "title": "Container",
+            "required": [
+                "isContainerAutoSizeEnabled",
+                "region",
+                "style",
+                "unit"
+            ],
+            "properties": {
+                "height": {
+                    "title": "height",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/int"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "height",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "isContainerAutoSizeEnabled": {
+                    "title": "isContainerAutoSizeEnabled",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "isContainerAutoSizeEnabled",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "region": {
+                    "title": "region",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "region",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "sidebarComponents": {
+                    "title": "sidebarComponents",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SidebarComponentSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "sidebarComponents",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "style": {
+                    "title": "style",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "style",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "unit": {
+                    "title": "unit",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "unit",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "width": {
+                    "title": "width",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/int"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "width",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "Container",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "height",
+                "isContainerAutoSizeEnabled",
+                "region",
+                "sidebarComponents",
+                "style",
+                "unit",
+                "width"
+            ]
+        }
+    }
+}

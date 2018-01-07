@@ -1,0 +1,253 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "CustomTab": {
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "CustomTab",
+                    "properties": {
+                        "actionOverrides": {
+                            "title": "actionOverrides",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ActionOverrideSchema.json"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "actionOverrides",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "auraComponent": {
+                            "title": "auraComponent",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "auraComponent",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "customObject": {
+                            "title": "customObject",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "customObject",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "description": {
+                            "title": "description",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "description",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "flexiPage": {
+                            "title": "flexiPage",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "flexiPage",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "frameHeight": {
+                            "title": "frameHeight",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/int"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "frameHeight",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "hasSidebar": {
+                            "title": "hasSidebar",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "hasSidebar",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "icon": {
+                            "title": "icon",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "icon",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "label": {
+                            "title": "label",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "label",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "mobileReady": {
+                            "title": "mobileReady",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "mobileReady",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "motif": {
+                            "title": "motif",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "motif",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "page": {
+                            "title": "page",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "page",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "scontrol": {
+                            "title": "scontrol",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "scontrol",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "splashPageLink": {
+                            "title": "splashPageLink",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "splashPageLink",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "url": {
+                            "title": "url",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "url",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "urlEncodingKey": {
+                            "title": "urlEncodingKey",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/EncodingSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "urlEncodingKey",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "CustomTab",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "actionOverrides",
+                "auraComponent",
+                "customObject",
+                "description",
+                "flexiPage",
+                "frameHeight",
+                "hasSidebar",
+                "icon",
+                "label",
+                "mobileReady",
+                "motif",
+                "page",
+                "scontrol",
+                "splashPageLink",
+                "url",
+                "urlEncodingKey"
+            ]
+        }
+    }
+}

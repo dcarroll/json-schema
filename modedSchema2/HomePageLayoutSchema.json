@@ -1,0 +1,61 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "HomePageLayout": {
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "HomePageLayout",
+                    "properties": {
+                        "narrowComponents": {
+                            "title": "narrowComponents",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "narrowComponents",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "wideComponents": {
+                            "title": "wideComponents",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "wideComponents",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "HomePageLayout",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "narrowComponents",
+                "wideComponents"
+            ]
+        }
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ProfileLayoutAssignment": {
+            "type": "object",
+            "title": "ProfileLayoutAssignment",
+            "required": [
+                "layout"
+            ],
+            "properties": {
+                "layout": {
+                    "title": "layout",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "layout",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "recordType": {
+                    "title": "recordType",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "recordType",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "ProfileLayoutAssignment",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "layout",
+                "recordType"
+            ]
+        }
+    }
+}

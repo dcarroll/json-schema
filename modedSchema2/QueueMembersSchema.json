@@ -1,0 +1,88 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "QueueMembers": {
+            "type": "object",
+            "title": "QueueMembers",
+            "properties": {
+                "publicGroups": {
+                    "title": "publicGroups",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/PublicGroupsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "publicGroups",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "roleAndSubordinates": {
+                    "title": "roleAndSubordinates",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/RoleAndSubordinatesSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "roleAndSubordinates",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "roleAndSubordinatesInternal": {
+                    "title": "roleAndSubordinatesInternal",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/RoleAndSubordinatesInternalSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "roleAndSubordinatesInternal",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "roles": {
+                    "title": "roles",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/RolesSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "roles",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "users": {
+                    "title": "users",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/UsersSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "users",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "QueueMembers",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "publicGroups",
+                "roleAndSubordinates",
+                "roleAndSubordinatesInternal",
+                "roles",
+                "users"
+            ]
+        }
+    }
+}

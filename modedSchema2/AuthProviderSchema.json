@@ -1,0 +1,309 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "AuthProvider": {
+            "required": [
+                "friendlyName",
+                "providerType"
+            ],
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "AuthProvider",
+                    "properties": {
+                        "authorizeUrl": {
+                            "title": "authorizeUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "authorizeUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "consumerKey": {
+                            "title": "consumerKey",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "consumerKey",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "consumerSecret": {
+                            "title": "consumerSecret",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "consumerSecret",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "customMetadataTypeRecord": {
+                            "title": "customMetadataTypeRecord",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "customMetadataTypeRecord",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "defaultScopes": {
+                            "title": "defaultScopes",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "defaultScopes",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "errorUrl": {
+                            "title": "errorUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "errorUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "executionUser": {
+                            "title": "executionUser",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "executionUser",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "friendlyName": {
+                            "title": "friendlyName",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "friendlyName",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "iconUrl": {
+                            "title": "iconUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "iconUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "idTokenIssuer": {
+                            "title": "idTokenIssuer",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "idTokenIssuer",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "includeOrgIdInIdentifier": {
+                            "title": "includeOrgIdInIdentifier",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "includeOrgIdInIdentifier",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "logoutUrl": {
+                            "title": "logoutUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "logoutUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "plugin": {
+                            "title": "plugin",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "plugin",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "portal": {
+                            "title": "portal",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "portal",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "providerType": {
+                            "title": "providerType",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AuthProviderTypeSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "providerType",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "registrationHandler": {
+                            "title": "registrationHandler",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "registrationHandler",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "sendAccessTokenInHeader": {
+                            "title": "sendAccessTokenInHeader",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "sendAccessTokenInHeader",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "sendClientCredentialsInHeader": {
+                            "title": "sendClientCredentialsInHeader",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "sendClientCredentialsInHeader",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "tokenUrl": {
+                            "title": "tokenUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "tokenUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "userInfoUrl": {
+                            "title": "userInfoUrl",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "userInfoUrl",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "AuthProvider",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "authorizeUrl",
+                "consumerKey",
+                "consumerSecret",
+                "customMetadataTypeRecord",
+                "defaultScopes",
+                "errorUrl",
+                "executionUser",
+                "friendlyName",
+                "iconUrl",
+                "idTokenIssuer",
+                "includeOrgIdInIdentifier",
+                "logoutUrl",
+                "plugin",
+                "portal",
+                "providerType",
+                "registrationHandler",
+                "sendAccessTokenInHeader",
+                "sendClientCredentialsInHeader",
+                "tokenUrl",
+                "userInfoUrl"
+            ]
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "EmbeddedServiceConfig": {
+            "required": [
+                "masterLabel",
+                "site"
+            ],
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "EmbeddedServiceConfig",
+                    "properties": {
+                        "masterLabel": {
+                            "title": "masterLabel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "masterLabel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "site": {
+                            "title": "site",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "site",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "EmbeddedServiceConfig",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "masterLabel",
+                "site"
+            ]
+        }
+    }
+}

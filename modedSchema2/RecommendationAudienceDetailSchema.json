@@ -1,0 +1,60 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "RecommendationAudienceDetail": {
+            "type": "object",
+            "title": "RecommendationAudienceDetail",
+            "properties": {
+                "audienceCriteriaType": {
+                    "title": "audienceCriteriaType",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AudienceCriteriaTypeSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "audienceCriteriaType",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "audienceCriteriaValue": {
+                    "title": "audienceCriteriaValue",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "audienceCriteriaValue",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "setupName": {
+                    "title": "setupName",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "setupName",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "RecommendationAudienceDetail",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "audienceCriteriaType",
+                "audienceCriteriaValue",
+                "setupName"
+            ]
+        }
+    }
+}

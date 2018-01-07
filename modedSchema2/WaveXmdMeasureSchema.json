@@ -1,0 +1,261 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "WaveXmdMeasure": {
+            "type": "object",
+            "title": "WaveXmdMeasure",
+            "required": [
+                "field",
+                "isDerived",
+                "sortIndex"
+            ],
+            "properties": {
+                "dateFormat": {
+                    "title": "dateFormat",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "dateFormat",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "description": {
+                    "title": "description",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "description",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "field": {
+                    "title": "field",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "field",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "formatCustomFormat": {
+                    "title": "formatCustomFormat",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "formatCustomFormat",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "formatDecimalDigits": {
+                    "title": "formatDecimalDigits",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/int"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "formatDecimalDigits",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "formatIsNegativeParens": {
+                    "title": "formatIsNegativeParens",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "formatIsNegativeParens",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "formatPrefix": {
+                    "title": "formatPrefix",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "formatPrefix",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "formatSuffix": {
+                    "title": "formatSuffix",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "formatSuffix",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "formatUnit": {
+                    "title": "formatUnit",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "formatUnit",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "formatUnitMultiplier": {
+                    "title": "formatUnitMultiplier",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/double"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "formatUnitMultiplier",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "fullyQualifiedName": {
+                    "title": "fullyQualifiedName",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "fullyQualifiedName",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "isDerived": {
+                    "title": "isDerived",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "isDerived",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "label": {
+                    "title": "label",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "label",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "origin": {
+                    "title": "origin",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "origin",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "showDetailsDefaultFieldIndex": {
+                    "title": "showDetailsDefaultFieldIndex",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/int"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "showDetailsDefaultFieldIndex",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "showInExplorer": {
+                    "title": "showInExplorer",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "showInExplorer",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "sortIndex": {
+                    "title": "sortIndex",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/int"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "sortIndex",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "WaveXmdMeasure",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "dateFormat",
+                "description",
+                "field",
+                "formatCustomFormat",
+                "formatDecimalDigits",
+                "formatIsNegativeParens",
+                "formatPrefix",
+                "formatSuffix",
+                "formatUnit",
+                "formatUnitMultiplier",
+                "fullyQualifiedName",
+                "isDerived",
+                "label",
+                "origin",
+                "showDetailsDefaultFieldIndex",
+                "showInExplorer",
+                "sortIndex"
+            ]
+        }
+    }
+}

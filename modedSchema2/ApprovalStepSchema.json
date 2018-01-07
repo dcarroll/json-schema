@@ -1,0 +1,163 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ApprovalStep": {
+            "type": "object",
+            "title": "ApprovalStep",
+            "required": [
+                "assignedApprover",
+                "label",
+                "name"
+            ],
+            "properties": {
+                "allowDelegate": {
+                    "title": "allowDelegate",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "allowDelegate",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "approvalActions": {
+                    "title": "approvalActions",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApprovalActionSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "approvalActions",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "assignedApprover": {
+                    "title": "assignedApprover",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApprovalStepApproverSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "assignedApprover",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "description": {
+                    "title": "description",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "description",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "entryCriteria": {
+                    "title": "entryCriteria",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApprovalEntryCriteriaSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "entryCriteria",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "ifCriteriaNotMet": {
+                    "title": "ifCriteriaNotMet",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/StepCriteriaNotMetTypeSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "ifCriteriaNotMet",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "label": {
+                    "title": "label",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "label",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "name": {
+                    "title": "name",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "name",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "rejectBehavior": {
+                    "title": "rejectBehavior",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApprovalStepRejectBehaviorSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "rejectBehavior",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "rejectionActions": {
+                    "title": "rejectionActions",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApprovalActionSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "rejectionActions",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "ApprovalStep",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "allowDelegate",
+                "approvalActions",
+                "assignedApprover",
+                "description",
+                "entryCriteria",
+                "ifCriteriaNotMet",
+                "label",
+                "name",
+                "rejectBehavior",
+                "rejectionActions"
+            ]
+        }
+    }
+}

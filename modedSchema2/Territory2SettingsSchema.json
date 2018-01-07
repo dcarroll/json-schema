@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "Territory2Settings": {
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "Territory2Settings",
+                    "properties": {
+                        "defaultAccountAccessLevel": {
+                            "title": "defaultAccountAccessLevel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "defaultAccountAccessLevel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "defaultCaseAccessLevel": {
+                            "title": "defaultCaseAccessLevel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "defaultCaseAccessLevel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "defaultContactAccessLevel": {
+                            "title": "defaultContactAccessLevel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "defaultContactAccessLevel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "defaultOpportunityAccessLevel": {
+                            "title": "defaultOpportunityAccessLevel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "defaultOpportunityAccessLevel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "opportunityFilterSettings": {
+                            "title": "opportunityFilterSettings",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/Territory2SettingsOpportunityFilterSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "opportunityFilterSettings",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "Territory2Settings",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "defaultAccountAccessLevel",
+                "defaultCaseAccessLevel",
+                "defaultContactAccessLevel",
+                "defaultOpportunityAccessLevel",
+                "opportunityFilterSettings"
+            ]
+        }
+    }
+}

@@ -1,0 +1,114 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ContentAsset": {
+            "required": [
+                "language",
+                "masterLabel",
+                "versions"
+            ],
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataWithContentSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "ContentAsset",
+                    "properties": {
+                        "format": {
+                            "title": "format",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ContentAssetFormatSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "format",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "language": {
+                            "title": "language",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "language",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "masterLabel": {
+                            "title": "masterLabel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "masterLabel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "originNetwork": {
+                            "title": "originNetwork",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "originNetwork",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "relationships": {
+                            "title": "relationships",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ContentAssetRelationshipsSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "relationships",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "versions": {
+                            "title": "versions",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ContentAssetVersionsSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "versions",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "ContentAsset",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "format",
+                "language",
+                "masterLabel",
+                "originNetwork",
+                "relationships",
+                "versions"
+            ]
+        }
+    }
+}

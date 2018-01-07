@@ -1,0 +1,50 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ApprovalStepApprover": {
+            "type": "object",
+            "title": "ApprovalStepApprover",
+            "properties": {
+                "approver": {
+                    "title": "approver",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ApproverSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "approver",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "whenMultipleApprovers": {
+                    "title": "whenMultipleApprovers",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/RoutingTypeSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "whenMultipleApprovers",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "ApprovalStepApprover",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "approver",
+                "whenMultipleApprovers"
+            ]
+        }
+    }
+}

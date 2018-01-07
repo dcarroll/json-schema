@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "LiveChatButtonDeployments": {
+            "type": "object",
+            "title": "LiveChatButtonDeployments",
+            "properties": {
+                "deployment": {
+                    "title": "deployment",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "deployment",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "LiveChatButtonDeployments",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "deployment"
+            ]
+        }
+    }
+}

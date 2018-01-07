@@ -1,0 +1,375 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "Layout": {
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "Layout",
+                    "properties": {
+                        "customButtons": {
+                            "title": "customButtons",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "customButtons",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "customConsoleComponents": {
+                            "title": "customConsoleComponents",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/CustomConsoleComponentsSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "customConsoleComponents",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "emailDefault": {
+                            "title": "emailDefault",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "emailDefault",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "excludeButtons": {
+                            "title": "excludeButtons",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "excludeButtons",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "feedLayout": {
+                            "title": "feedLayout",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/FeedLayoutSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "feedLayout",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "headers": {
+                            "title": "headers",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LayoutHeaderSchema.json"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "headers",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "layoutSections": {
+                            "title": "layoutSections",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LayoutSectionSchema.json"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "layoutSections",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "miniLayout": {
+                            "title": "miniLayout",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MiniLayoutSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "miniLayout",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "multilineLayoutFields": {
+                            "title": "multilineLayoutFields",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "multilineLayoutFields",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "platformActionList": {
+                            "title": "platformActionList",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/PlatformActionListSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "platformActionList",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "quickActionList": {
+                            "title": "quickActionList",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/QuickActionListSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "quickActionList",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "relatedContent": {
+                            "title": "relatedContent",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/RelatedContentSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "relatedContent",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "relatedLists": {
+                            "title": "relatedLists",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/RelatedListItemSchema.json"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "relatedLists",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "relatedObjects": {
+                            "title": "relatedObjects",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "relatedObjects",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "runAssignmentRulesDefault": {
+                            "title": "runAssignmentRulesDefault",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "runAssignmentRulesDefault",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "showEmailCheckbox": {
+                            "title": "showEmailCheckbox",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "showEmailCheckbox",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "showHighlightsPanel": {
+                            "title": "showHighlightsPanel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "showHighlightsPanel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "showInteractionLogPanel": {
+                            "title": "showInteractionLogPanel",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "showInteractionLogPanel",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "showKnowledgeComponent": {
+                            "title": "showKnowledgeComponent",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "showKnowledgeComponent",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "showRunAssignmentRulesCheckbox": {
+                            "title": "showRunAssignmentRulesCheckbox",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "showRunAssignmentRulesCheckbox",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "showSolutionSection": {
+                            "title": "showSolutionSection",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "showSolutionSection",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "showSubmitAndAttachButton": {
+                            "title": "showSubmitAndAttachButton",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "showSubmitAndAttachButton",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "summaryLayout": {
+                            "title": "summaryLayout",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SummaryLayoutSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "summaryLayout",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "Layout",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "customButtons",
+                "customConsoleComponents",
+                "emailDefault",
+                "excludeButtons",
+                "feedLayout",
+                "headers",
+                "layoutSections",
+                "miniLayout",
+                "multilineLayoutFields",
+                "platformActionList",
+                "quickActionList",
+                "relatedContent",
+                "relatedLists",
+                "relatedObjects",
+                "runAssignmentRulesDefault",
+                "showEmailCheckbox",
+                "showHighlightsPanel",
+                "showInteractionLogPanel",
+                "showKnowledgeComponent",
+                "showRunAssignmentRulesCheckbox",
+                "showSolutionSection",
+                "showSubmitAndAttachButton",
+                "summaryLayout"
+            ]
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "AgentConfigAssignments": {
+            "type": "object",
+            "title": "AgentConfigAssignments",
+            "properties": {
+                "profiles": {
+                    "title": "profiles",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AgentConfigProfileAssignmentsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "profiles",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "users": {
+                    "title": "users",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AgentConfigUserAssignmentsSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "users",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "AgentConfigAssignments",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "profiles",
+                "users"
+            ]
+        }
+    }
+}

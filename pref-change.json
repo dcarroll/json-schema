@@ -1,9 +1,0 @@
-,
-"json.schemas": [
-    {
-        "fileMatch": [
-            "/*scratch-def.json"
-        ],
-        "url": "./scratchdef.json"
-    }
-]

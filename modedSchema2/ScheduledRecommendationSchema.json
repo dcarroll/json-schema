@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ScheduledRecommendation": {
+            "type": "object",
+            "title": "ScheduledRecommendation",
+            "properties": {
+                "scheduledRecommendationDetails": {
+                    "title": "scheduledRecommendationDetails",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ScheduledRecommendationDetailSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "scheduledRecommendationDetails",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "ScheduledRecommendation",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "scheduledRecommendationDetails"
+            ]
+        }
+    }
+}

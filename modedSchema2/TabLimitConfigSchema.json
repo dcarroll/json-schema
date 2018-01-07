@@ -1,0 +1,46 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "TabLimitConfig": {
+            "type": "object",
+            "title": "TabLimitConfig",
+            "properties": {
+                "maxNumberOfPrimaryTabs": {
+                    "title": "maxNumberOfPrimaryTabs",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "maxNumberOfPrimaryTabs",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "maxNumberOfSubTabs": {
+                    "title": "maxNumberOfSubTabs",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "maxNumberOfSubTabs",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "TabLimitConfig",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "maxNumberOfPrimaryTabs",
+                "maxNumberOfSubTabs"
+            ]
+        }
+    }
+}

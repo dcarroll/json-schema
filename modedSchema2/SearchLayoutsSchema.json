@@ -1,0 +1,180 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "SearchLayouts": {
+            "type": "object",
+            "title": "SearchLayouts",
+            "properties": {
+                "customTabListAdditionalFields": {
+                    "title": "customTabListAdditionalFields",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "customTabListAdditionalFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "excludedStandardButtons": {
+                    "title": "excludedStandardButtons",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "excludedStandardButtons",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "listViewButtons": {
+                    "title": "listViewButtons",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "listViewButtons",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "lookupDialogsAdditionalFields": {
+                    "title": "lookupDialogsAdditionalFields",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "lookupDialogsAdditionalFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "lookupFilterFields": {
+                    "title": "lookupFilterFields",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "lookupFilterFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "lookupPhoneDialogsAdditionalFields": {
+                    "title": "lookupPhoneDialogsAdditionalFields",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "lookupPhoneDialogsAdditionalFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "searchFilterFields": {
+                    "title": "searchFilterFields",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "searchFilterFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "searchResultsAdditionalFields": {
+                    "title": "searchResultsAdditionalFields",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "searchResultsAdditionalFields",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "searchResultsCustomButtons": {
+                    "title": "searchResultsCustomButtons",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "searchResultsCustomButtons",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "SearchLayouts",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "customTabListAdditionalFields",
+                "excludedStandardButtons",
+                "listViewButtons",
+                "lookupDialogsAdditionalFields",
+                "lookupFilterFields",
+                "lookupPhoneDialogsAdditionalFields",
+                "searchFilterFields",
+                "searchResultsAdditionalFields",
+                "searchResultsCustomButtons"
+            ]
+        }
+    }
+}

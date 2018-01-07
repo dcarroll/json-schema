@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "AppMenu": {
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "AppMenu",
+                    "properties": {
+                        "appMenuItems": {
+                            "title": "appMenuItems",
+                            "allOf": [
+                                {
+                                    "type": "array",
+                                    "items": {
+                                        "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/AppMenuItemSchema.json"
+                                    },
+                                    "minItems": 0
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "appMenuItems",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "AppMenu",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "appMenuItems"
+            ]
+        }
+    }
+}

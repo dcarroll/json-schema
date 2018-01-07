@@ -1,0 +1,68 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "SaveResult": {
+            "type": "object",
+            "title": "SaveResult",
+            "required": [
+                "fullName",
+                "success"
+            ],
+            "properties": {
+                "errors": {
+                    "title": "errors",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/ErrorSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "errors",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "fullName": {
+                    "title": "fullName",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "fullName",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "success": {
+                    "title": "success",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "success",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "SaveResult",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "errors",
+                "fullName",
+                "success"
+            ]
+        }
+    }
+}

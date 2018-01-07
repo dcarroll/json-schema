@@ -1,0 +1,53 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "QuickActionLayout": {
+            "type": "object",
+            "title": "QuickActionLayout",
+            "required": [
+                "layoutSectionStyle"
+            ],
+            "properties": {
+                "layoutSectionStyle": {
+                    "title": "layoutSectionStyle",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LayoutSectionStyleSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "layoutSectionStyle",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "quickActionLayoutColumns": {
+                    "title": "quickActionLayoutColumns",
+                    "allOf": [
+                        {
+                            "type": "array",
+                            "items": {
+                                "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/QuickActionLayoutColumnSchema.json"
+                            },
+                            "minItems": 0
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "quickActionLayoutColumns",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "QuickActionLayout",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "layoutSectionStyle",
+                "quickActionLayoutColumns"
+            ]
+        }
+    }
+}

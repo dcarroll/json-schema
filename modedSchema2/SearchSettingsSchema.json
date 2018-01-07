@@ -1,0 +1,162 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "SearchSettings": {
+            "required": [
+                "documentContentSearchEnabled",
+                "optimizeSearchForCJKEnabled",
+                "recentlyViewedUsersForBlankLookupEnabled",
+                "searchSettingsByObject",
+                "sidebarAutoCompleteEnabled",
+                "sidebarDropDownListEnabled",
+                "sidebarLimitToItemsIOwnCheckboxEnabled",
+                "singleSearchResultShortcutEnabled",
+                "spellCorrectKnowledgeSearchEnabled"
+            ],
+            "allOf": [
+                {
+                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/MetadataSchema.json"
+                },
+                {
+                    "type": "object",
+                    "title": "SearchSettings",
+                    "properties": {
+                        "documentContentSearchEnabled": {
+                            "title": "documentContentSearchEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "documentContentSearchEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "optimizeSearchForCJKEnabled": {
+                            "title": "optimizeSearchForCJKEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "optimizeSearchForCJKEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "recentlyViewedUsersForBlankLookupEnabled": {
+                            "title": "recentlyViewedUsersForBlankLookupEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "recentlyViewedUsersForBlankLookupEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "searchSettingsByObject": {
+                            "title": "searchSettingsByObject",
+                            "allOf": [
+                                {
+                                    "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/SearchSettingsByObjectSchema.json"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "searchSettingsByObject",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "sidebarAutoCompleteEnabled": {
+                            "title": "sidebarAutoCompleteEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "sidebarAutoCompleteEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "sidebarDropDownListEnabled": {
+                            "title": "sidebarDropDownListEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "sidebarDropDownListEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "sidebarLimitToItemsIOwnCheckboxEnabled": {
+                            "title": "sidebarLimitToItemsIOwnCheckboxEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "sidebarLimitToItemsIOwnCheckboxEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "singleSearchResultShortcutEnabled": {
+                            "title": "singleSearchResultShortcutEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "singleSearchResultShortcutEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        },
+                        "spellCorrectKnowledgeSearchEnabled": {
+                            "title": "spellCorrectKnowledgeSearchEnabled",
+                            "allOf": [
+                                {
+                                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/boolean"
+                                }
+                            ],
+                            "propertyType": "element",
+                            "elementName": {
+                                "localPart": "spellCorrectKnowledgeSearchEnabled",
+                                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                            }
+                        }
+                    }
+                }
+            ],
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "SearchSettings",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "documentContentSearchEnabled",
+                "optimizeSearchForCJKEnabled",
+                "recentlyViewedUsersForBlankLookupEnabled",
+                "searchSettingsByObject",
+                "sidebarAutoCompleteEnabled",
+                "sidebarDropDownListEnabled",
+                "sidebarLimitToItemsIOwnCheckboxEnabled",
+                "singleSearchResultShortcutEnabled",
+                "spellCorrectKnowledgeSearchEnabled"
+            ]
+        }
+    }
+}

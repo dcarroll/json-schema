@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "UserDateGranularity": {
+            "allOf": [
+                {
+                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                },
+                {
+                    "enum": [
+                        "None",
+                        "Day",
+                        "Week",
+                        "Month",
+                        "Quarter",
+                        "Year",
+                        "FiscalQuarter",
+                        "FiscalYear",
+                        "MonthInYear",
+                        "DayInMonth",
+                        "FiscalPeriod",
+                        "FiscalWeek"
+                    ]
+                }
+            ],
+            "typeType": "enumInfo",
+            "typeName": {
+                "localPart": "UserDateGranularity",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            }
+        }
+    }
+}

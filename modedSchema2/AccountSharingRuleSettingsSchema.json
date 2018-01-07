@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "AccountSharingRuleSettings": {
+            "type": "object",
+            "title": "AccountSharingRuleSettings",
+            "required": [
+                "caseAccessLevel",
+                "contactAccessLevel",
+                "opportunityAccessLevel"
+            ],
+            "properties": {
+                "caseAccessLevel": {
+                    "title": "caseAccessLevel",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "caseAccessLevel",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "contactAccessLevel": {
+                    "title": "contactAccessLevel",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "contactAccessLevel",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                },
+                "opportunityAccessLevel": {
+                    "title": "opportunityAccessLevel",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "opportunityAccessLevel",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "AccountSharingRuleSettings",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "caseAccessLevel",
+                "contactAccessLevel",
+                "opportunityAccessLevel"
+            ]
+        }
+    }
+}

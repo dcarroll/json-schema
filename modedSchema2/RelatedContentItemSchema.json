@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "RelatedContentItem": {
+            "type": "object",
+            "title": "RelatedContentItem",
+            "required": [
+                "layoutItem"
+            ],
+            "properties": {
+                "layoutItem": {
+                    "title": "layoutItem",
+                    "allOf": [
+                        {
+                            "$ref": "https://s3-us-west-2.amazonaws.com/djcarroll/schemas/modedSchema/LayoutItemSchema.json"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "layoutItem",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "typeName": {
+                "localPart": "RelatedContentItem",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            },
+            "propertiesOrder": [
+                "layoutItem"
+            ]
+        }
+    }
+}

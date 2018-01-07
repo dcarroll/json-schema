@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "LiveChatButtonInviteEndPosition": {
+            "allOf": [
+                {
+                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                },
+                {
+                    "enum": [
+                        "TopLeft",
+                        "Top",
+                        "TopRight",
+                        "Left",
+                        "Center",
+                        "Right",
+                        "BottomLeft",
+                        "Bottom",
+                        "BottomRight"
+                    ]
+                }
+            ],
+            "typeType": "enumInfo",
+            "typeName": {
+                "localPart": "LiveChatButtonInviteEndPosition",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            }
+        }
+    }
+}

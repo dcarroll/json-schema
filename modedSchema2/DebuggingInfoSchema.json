@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "DebuggingInfo": {
+            "type": "object",
+            "title": "DebuggingInfo",
+            "required": [
+                "debugLog"
+            ],
+            "properties": {
+                "debugLog": {
+                    "title": "debugLog",
+                    "allOf": [
+                        {
+                            "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                        }
+                    ],
+                    "propertyType": "element",
+                    "elementName": {
+                        "localPart": "debugLog",
+                        "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+                    }
+                }
+            },
+            "typeType": "classInfo",
+            "propertiesOrder": [
+                "debugLog"
+            ]
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "properties": {
+        "ActionLinkHttpMethod": {
+            "allOf": [
+                {
+                    "$ref": "http://www.jsonix.org/jsonschemas/w3c/2001/XMLSchema.jsonschema#/definitions/string"
+                },
+                {
+                    "enum": [
+                        "HttpDelete",
+                        "HttpHead",
+                        "HttpGet",
+                        "HttpPatch",
+                        "HttpPost",
+                        "HttpPut"
+                    ]
+                }
+            ],
+            "typeType": "enumInfo",
+            "typeName": {
+                "localPart": "ActionLinkHttpMethod",
+                "namespaceURI": "http://soap.sforce.com/2006/04/metadata"
+            }
+        }
+    }
+}
